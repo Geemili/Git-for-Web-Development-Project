@@ -129,4 +129,11 @@ Stretch Questions
 5. In your own words, explain the box model. What is the fix for the box model? 
 
 
+# Stretch Git Tasks
 
+- Research and set up a Graphical User Interface (GUI) git console.
+    - I found a GUI called `git-cola` and installed it. It has a nice graphical
+      view of status of the repository, and it also comes with history
+      visualizer.
+- Setup SSH keys with GitHub.
+    - I had this setup already.
