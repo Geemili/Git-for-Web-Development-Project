@@ -111,9 +111,21 @@ https://codepen.io/geemili/full/YzPjVXm
 Stretch Questions
 
 1. What is the difference between an inline element and a block element?
-2. What happens when an element is positioned absolutely? 
+    - An inline element will be placed right next to the previous element, but a
+      block element will be on it's own line.
+    - At least, that's what I thought it was. This post describes inline
+      elements as only taking up the minimum amount of space, where block
+      elements take up the whole row.
+2. What happens when an element is positioned absolutely?
+    - It is placed at that postion on the page, regardless of where other
+      elements are.
 3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    - Use the `max-width` property.
 4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    - block elements: `<div>`, `<p>`
+    - inline elements: `<span>`, `<strong>`
+    - inline-block element: `<textarea>`
+
 5. In your own words, explain the box model. What is the fix for the box model? 
 
 
