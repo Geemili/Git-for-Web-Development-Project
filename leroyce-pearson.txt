@@ -1,0 +1,178 @@
+https://codepen.io/geemili/full/YzPjVXm
+
+1. What is Semantic HTML?
+    - Semantic HTML refers to using elements that mean something to humans and
+      computers, rather than using generic `<div>` and `<span>` elements.
+
+2. What is HTML used for?
+    - Marking up text to give it structure. It's like the bones of a web page.
+
+3. What is an attribute and where do we put it?
+    - Attributes are an extra value that can be put on an element. It goes after
+      the element name but before the closing angle bracket. Like so:
+      `<el attribute="this here">`
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+    - It is top level header tag, usually used for the title of the page.
+      Generally you will only use it once per page.
+
+5. Name two tags that have required attributes
+    - `<img>` and `<a>` both require attributes, `src` and `href` respectively.
+
+6. What do we put in the head of our HTML document? 
+    - Metadata about the page. For example, the title that is shown in the tab
+      is put in the `<head>`, and links to the stylesheet or javascript code.
+
+7. What is an id?
+    - A unique identifier for a particular element. It must be set manually.
+
+8. What elements can I add an id to?
+    - Any element.
+
+9. How many times can I use the same id on a page?
+    - Each id must be unique, so only once per page.
+
+10. What is a class?
+    - It is a tag that can be targeted by CSS to do styling.
+
+11. What elements can I add a class to?
+    - Any element, but it wouldn't make sense to add it to an invisible attribute.
+      <https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes>
+
+12. How many times can I use the same class on a page? 
+    - As many times as it is needed.
+
+13. How do I get my link to open in a new tab?
+    - Set the target attribute to `_blank`; `<a href="#" target="_blank">new window</a>`
+
+14. What is the alt attribute used for?
+    - It is text to replace an image when it cannot be rendered, either because
+      it cannot be loaded or if the user is using a screen reader.
+
+15. How do I reference an id?
+    - You can reference an id in CSS by using the `#id-of-element` in a selector.
+
+16. What is the difference between a section and a div
+    - A `<div>` has no meaning beyond the structure of the page, but a
+      `<section>` means that everything in the element should be treated as a
+      single piece of text, like a chapter.
+
+17. What is CSS used for?
+    - CSS is used for styling a page; you use it to set colors, resize text,
+      underline text, or change the layout.
+
+18. How to we select an element? Example - every h2 on the page
+    - You simply type the name of the element.
+      Like so: `h2 { /* CSS properties set here */ }`
+
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    - An id refers to a specific element, and a class refers to a group of
+      similar elements.
+    - If you only have it appear once, use an id.
+    - If you have, for example, a list of comments, you would set each of the
+      comments elements to a shared class.
+
+20. How do we select classes in CSS?
+    - Using a dot. `.class-name { /* properties */ }`
+
+21. How do we select a p element with a single class of “human””?
+    - `p.human { /* properties */ }`
+
+22. What is a parent child selector? When would this be useful? 
+    - It selects an element that is within another element. This is useful if
+      the parent element has a id or class, but the child does not.
+
+23. How do you select all links within a div with the class of sidebar?
+    - `div.sidebar a { /* properties */ }`
+
+24. What is a pseudo selector?
+    - It is a selector that refers to the state of an element, instead of HTML
+      structure.
+
+25. What do we use the change the spacing between lines?
+    - `line-height: value;`
+
+26. What do we use to change the spacing between letters?
+    - `letter-spacing: value;`
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    - `text-transform: uppercase;`
+    - `text-transform: lowercase;`
+    - `text-transform: capitalize;`
+
+28. How do I add a 1px border around my div that is dotted and black?
+    - `border: 1px dotted black;`
+
+29. How do I select everything on the page? 
+    - Using the universal selector (`*`)
+
+30. How do I write a comment in CSS?
+    - Using a forward slash and a asterisk. Like so: `/* this is commented */`
+
+31. How do I find out what file I am in, when I am using the command line?
+    - Assuming this meant to ask about folders, the command `pwd` will return
+      the current directory.
+
+32. Using the command line - how do I see a list of files/folders in my current folder?
+    - Using the `ls` command.
+
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    - `rm <file-name>`
+    - You must be careful because `rm` will not double check with you and will
+      permantly remove the file.
+
+34. Why should I use version control? 
+    - It allows you to see how the software has evolved, and lets you easily
+      revert changes.
+
+35. How often should I commit to github?
+    - Often; Every major change or every 20min.
+
+36. What is the command we would use to push our repo up to github? 
+    - `git push`
+
+37. Walk me through Lambda's git flow. 
+    a. Fork the project
+    b. Add your team lead as a collaborator
+    c. Clone the repository
+    d. Create a new branch with your name. `git checkout -b firstname-lastname`
+    e. Make the changes
+        i. Add them to git. `git add <files>`
+        ii. Commit the changes. `git commit -m <message>`
+    f. Push the changes upstream. `git push -u origin firstname-lastname`
+    g. Create a pull request from `firstname-lastname` to `master` with your
+       team lead as a reviewer.
+    h. Wait for the review and make any changes requested.
+
+Stretch Questions
+
+1. What is the difference between an inline element and a block element?
+    - An inline element will be placed right next to the previous element, but a
+      block element will be on it's own line.
+    - At least, that's what I thought it was. This post describes inline
+      elements as only taking up the minimum amount of space, where block
+      elements take up the whole row.
+
+2. What happens when an element is positioned absolutely?
+    - It is placed at that postion on the page, regardless of where other
+      elements are.
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    - Use the `max-width` property.
+
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    - block elements: `<div>`, `<p>`
+    - inline elements: `<span>`, `<strong>`
+    - inline-block element: `<textarea>`
+
+5. In your own words, explain the box model. What is the fix for the box model? 
+
+
+# Stretch Git Tasks
+
+- Research and set up a Graphical User Interface (GUI) git console.
+    - I found a GUI called `git-cola` and installed it. It has a nice graphical
+      view of status of the repository, and it also comes with history
+      visualizer.
+- Setup SSH keys with GitHub.
+    - I had this setup already.
